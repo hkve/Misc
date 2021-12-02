@@ -298,6 +298,7 @@ def write_to_file(filename, path):
 				file.write(article + "\n")
 	except FileNotFoundError:
 		print(f"Chould not write {filename}")
+		
 def found_path(G, H):
 	F = nx.compose(G,H)	
 	if nx.has_path(F, source=start_url, target=end_url):
